@@ -1,4 +1,4 @@
-# Malschule Susanne Merten
+# Malschule
 
 Website for "Malen in der alten Dorfschule" - an art school offering individual courses for all age groups.
 
@@ -29,7 +29,3 @@ npm run build
 ```
 
 Output is generated in the `dist/` folder.
-
-## Author
-
-Justus Deitert - mail@justusdeitert.de
