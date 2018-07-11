@@ -21,3 +21,5 @@ yarn-error.log*
 
 # Docker
 .docker/
+Dockerfile
+docker-compose.yml
