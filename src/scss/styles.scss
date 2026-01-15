@@ -136,7 +136,7 @@ main {
             }
         }
 
-        h2 {
+        .subtitle {
             font-family: 'Yanone Kaffeesatz', sans-serif;
             font-weight: 400;
             font-size: 5vw;
@@ -156,7 +156,7 @@ main {
             }
         }
 
-        h3 {
+        .highlight {
             font-family: 'Yanone Kaffeesatz', sans-serif;
             font-weight: 400;
             font-size: 3vw;
@@ -176,7 +176,7 @@ main {
             }
         }
 
-        h4 {
+        .cta {
             font-family: 'Yanone Kaffeesatz', sans-serif;
             font-weight: 400;
             font-size: 3vw;
@@ -245,7 +245,7 @@ footer {
         @media(max-width: 600px) {
             font-size: 18px;
         }
-        
+
         li {
             float: left;
             list-style: none;
