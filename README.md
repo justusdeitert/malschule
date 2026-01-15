@@ -7,7 +7,7 @@
 
 Website for **"Malen in der alten Dorfschule"** — an art school in Neuhof/Lamspringe offering individual painting courses for all age groups.
 
-� **Live Site:** [malschule-susanne-merten.de](https://www.malschule-susanne-merten.de)
+🌐 **Live Site:** [malschule-susanne-merten.de](https://www.malschule-susanne-merten.de)
 
 ## Tech Stack
 
