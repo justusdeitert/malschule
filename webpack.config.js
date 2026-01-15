@@ -11,14 +11,18 @@ module.exports = (env, argv) => {
     output: {
       filename: 'app.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: ''
+      publicPath: '',
+      clean: true,
+      assetModuleFilename: '[path][name][ext]'
     },
     devServer: {
-      contentBase: path.resolve(__dirname, 'dist'),
+      static: {
+        directory: path.resolve(__dirname, 'dist'),
+      },
       compress: true,
       port: 1337,
-      watchContentBase: true,
-      open: true
+      open: true,
+      watchFiles: ['src/**/*']
     },
     module: {
       rules: [
@@ -53,28 +57,18 @@ module.exports = (env, argv) => {
           ]
         },
         {
-          test: /\.(woff|woff2|eot|ttf|otf)$/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[name].[ext]',
-                outputPath: 'fonts/'
-              }
-            }
-          ]
+          test: /\.(woff|woff2|eot|ttf|otf)$/i,
+          type: 'asset/resource',
+          generator: {
+            filename: 'fonts/[name][ext]'
+          }
         },
         {
-          test: /\.(png|svg|jpg|jpeg|gif)$/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[name].[ext]',
-                outputPath: 'images/'
-              }
-            }
-          ]
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
+          generator: {
+            filename: 'images/[name][ext]'
+          }
         }
       ]
     },
@@ -87,12 +81,14 @@ module.exports = (env, argv) => {
         filename: 'index.html',
         inject: true
       }),
-      new CopyWebpackPlugin([
-        { from: 'images', to: 'images' },
-        { from: 'fonts', to: 'fonts' },
-        { from: '404.html', to: '404.html' },
-        { from: 'favicon.ico', to: 'favicon.ico' }
-      ])
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: 'images', to: 'images', noErrorOnMissing: true },
+          { from: 'fonts', to: 'fonts', noErrorOnMissing: true },
+          { from: '404.html', to: '404.html', noErrorOnMissing: true },
+          { from: 'favicon.ico', to: 'favicon.ico', noErrorOnMissing: true }
+        ]
+      })
     ],
     devtool: isDevelopment ? 'source-map' : false
   };
