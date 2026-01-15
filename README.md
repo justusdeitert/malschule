@@ -2,6 +2,7 @@
 
 [![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Sass](https://img.shields.io/badge/Sass-1.x-CC6699?style=flat&logo=sass&logoColor=white)](https://sass-lang.com/)
+[![Deployed on Coolify](https://img.shields.io/badge/Deployed_on-Coolify-6B16ED?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+PHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyczQuNDggMTAgMTAgMTAgMTAtNC40OCAxMC0xMFMxNy41MiAyIDEyIDJ6Ii8+PC9zdmc+)](https://coolify.io/)
 [![License: MIT](https://img.shields.io/badge/Code-MIT-green?style=flat)](LICENSE)
 [![Content](https://img.shields.io/badge/Content-©_All_Rights_Reserved-red?style=flat)](LICENSE)
 
